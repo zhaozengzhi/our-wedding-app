@@ -1,0 +1,21 @@
+<template name="card-item">
+<scroll-view class="content" scroll-y="{{true}}">
+  <view class="card-card">
+    <block wx:for="{{items}}" wx:key="index" wx:for-item="unit">
+    <swiper class="card-image-swiper" indicator-dots="{{true}}" indicator-active-color="{{'#FF7F50'}}" autoplay="{{true}}" interval="{{5000}}">
+    <block wx:for="{{unit.url}}" wx:for-item="imageUrl">
+      <swiper-item class="card-image-swiper-item">
+          <image class="card-picture" src="{{imageUrl}}" mode="aspectFill"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+    <view class="card-content">
+      <text class="card-content-text">{{unit.content}}</text>
+    </view>
+    <view class="card-makettime">
+      <text class="card-makettime-text">《{{unit.time}}》</text>
+    </view> 
+    </block>
+  </view>
+  </scroll-view>
+</template>

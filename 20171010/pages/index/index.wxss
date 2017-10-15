@@ -1,0 +1,47 @@
+.card-swiper {
+    height: 100%; 
+}
+
+.content{
+    height: 100%;
+}
+.card-swiper-item {
+  padding: 25rpx;
+  box-sizing: border-box;
+}
+
+.card-image-swiper{
+    height: 240px;
+}
+
+ .card-card {
+  padding: 20rpx;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px #ebebeb;
+}
+
+.card-picture {
+  width: 100%;
+}
+
+.card-content {
+  margin-top: 30rpx;
+  padding: 0 5rpx;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.card-content-text {
+  width: 100%;
+  min-height: 300rpx;
+  display: inline-block;
+}
+
+.card-makettime {
+  font-size: 14px;
+  color:  #383838;
+  text-align: right;
+  margin-top: 10px;
+  margin-right: 5px;
+} 

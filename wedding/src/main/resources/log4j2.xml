@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <Console name="SYSOUT" target="SYSTEM_OUT">
+            <PatternLayout patter="%d [%t] %-5p [%c] - %m%n"/>
+        </Console>
+
+        <RollingFile name="ROLLING_FILE" fileName="logs/wedding.log" filePattern="logs/wedding-%d{yyyy-MM-dd}.log">
+            <PatternLayout>
+                <Pattern>%d [%t] %-5p [%c] - %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="24"/>
+                <SizeBasedTriggeringPolicy size="20 MB"/>
+            </Policies>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="SYSOUT"/>
+            <AppenderRef ref="ROLLING_FILE"/>
+        </Root>
+    </Loggers>
+</Configuration>

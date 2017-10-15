@@ -1,0 +1,17 @@
+server:
+  port: 8080
+jdbc:
+  driverClass: com.mysql.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/zzz?useUnicode=true&characterEncoding=utf-8
+  username: root
+  password: rjzj19890911
+  maxActive: 300
+  maxIdle: 30
+  maxWait: 10000
+  minIdle: 10
+  validationQuery: SELECT 1
+  validationQueryTimeout: -1
+  testOnBorrow: true
+  removeAbandoned: true
+  removeAbandonedTimeout: 1800
+  logAbandoned: true

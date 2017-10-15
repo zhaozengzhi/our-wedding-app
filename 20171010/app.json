@@ -1,0 +1,39 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/bless/bless",
+        "pages/wedding/wedding"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "执子之手，与子偕老",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#888",
+        "selectedColor": "#89bdf7",
+        "backgroundColor": "#fff",
+        "borderStyle": "white",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "爱情",
+                "iconPath": "resources/love.png",
+                "selectedIconPath": "resources/love.png"
+            },
+            {
+                "pagePath": "pages/bless/bless",
+                "text": "祝福",
+                "iconPath": "resources/bless.png",
+                "selectedIconPath": "resources/bless.png"
+            },
+            {
+                "pagePath": "pages/wedding/wedding",
+                "text": "婚礼",
+                "iconPath": "resources/wedding.png",
+                "selectedIconPath": "resources/wedding.png"
+            }
+        ]
+    }
+}

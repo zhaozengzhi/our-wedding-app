@@ -1,0 +1,1 @@
+java -jar -Dspring.config.location=application.yml wedding.jar > stdout

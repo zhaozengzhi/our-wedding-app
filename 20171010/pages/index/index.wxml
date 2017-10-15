@@ -1,0 +1,11 @@
+<view class="container">
+  <swiper class="card-swiper" current="{{current}}" bindchange="changeContent">
+    <block wx:for="{{contents}}" wx:for-index="content_index" >
+      <swiper-item class="card-swiper-item">
+          <import src="templates/content.wxml"/>
+        <template is="card-item" data="{{items: item}}"/> 
+      </swiper-item>
+    </block>
+    <swiper-item></swiper-item>
+  </swiper>
+</view>

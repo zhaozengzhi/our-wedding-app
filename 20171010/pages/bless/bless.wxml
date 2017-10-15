@@ -1,0 +1,4 @@
+<view class="container">
+  <image src="{{imageUrl}}" mode="{{'aspectFit'}}" style="margin-left:10%;width:80%; height:90%;"></image>
+  <button type="primary" bindtap="sendBless" style="width:80%;margin-left:10%">{{bless}}</button>
+</view>
